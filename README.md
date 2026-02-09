@@ -70,7 +70,7 @@ Desenvolver uma **aplicação prática e interpretável de risco de crédito** q
   - Ajuste de threshold pós-treinamento
 - Pipeline de pré-processamento reproduzível
 - Modelo e artefatos versionados via pickle
-- Regstro e Versionamento com MLflow
+- Registro e Versionamento com MLflow
 
 ---
 
