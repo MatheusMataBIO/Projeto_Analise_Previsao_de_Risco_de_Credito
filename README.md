@@ -20,6 +20,16 @@ Dado esse cenário, **o erro mais crítico é o falso negativo**
 Por isso, o projeto foi desenvolvido com **prioridade na detecção correta de clientes inadimplentes**.
 
 ---
+## Estrutura do projeto 
+### **Execução**
+
+- ETL e processamento de dados
+- Seleção de features para EDA
+- EDA
+- Engenharia de features
+- Treinamento do modelo, SHAP e decisão de negócio
+- MLflow e Streamlit
+- Conjunto de teste
 
 ## 🎯 Métrica-Chave do Projeto
 
