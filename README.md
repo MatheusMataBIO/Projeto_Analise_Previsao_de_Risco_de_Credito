@@ -92,6 +92,66 @@ Desenvolver uma **aplicação prática e interpretável de risco de crédito** q
 
 ---
 
+## 🏦 Decisão de Negócio Adotada
+
+Após análise das métricas e simulação de impacto financeiro, foi definida uma política de crédito com foco na redução de perdas por inadimplência.
+
+A estratégia adotada prioriza:
+
+- Maximizar o Recall da Classe 1 (inadimplentes)
+- Reduzir a concessão de crédito para clientes de alto risco
+- Aceitar redução controlada na taxa de aprovação para proteger o resultado financeiro
+
+O threshold final foi definido em **0.12**, adotando uma política deliberadamente conservadora.
+
+A decisão prioriza a **máxima captura possível de clientes inadimplentes (Classe 1)**, mesmo que isso implique redução na taxa de aprovação.
+
+Essa estratégia foi adotada porque, no contexto analisado, **o custo de conceder crédito a um inadimplente é significativamente superior ao custo de negar crédito a um adimplente**.
+
+Portanto, a política de crédito implementada privilegia proteção contra perdas financeiras, aceitando aumento controlado na rejeição de clientes de baixo risco como mecanismo de mitigação.
+
+Essa decisão está totalmente documentada no notebook técnico do projeto.
+
+## 💰 Simulação de Impacto Financeiro
+
+No cenário analisado, o custo de conceder crédito a um inadimplente é significativamente superior ao lucro obtido com um cliente adimplente.
+
+Para fins de simulação, foram consideradas as seguintes premissas:
+
+- Volume analisado: 10.000 solicitações de crédito
+- Taxa média de inadimplência: 20%
+- Ticket médio por operação: R$ 5.000
+- Perda média por inadimplente: R$ 4.000
+- Lucro médio por cliente adimplente: R$ 800
+
+**Sem aplicação de modelo preditivo, os 2.000 clientes inadimplentes seriam aprovados, gerando:**
+
+2.000 × R$ 4.000 = R$ 8.000.000 em perdas estimadas.
+
+**Com o modelo implementado e recall de 82% para a classe inadimplente:**
+
+- 1.640 inadimplentes seriam bloqueados
+- 360 ainda receberiam crédito
+
+Perda estimada:
+360 × R$ 4.000 = R$ 1.440.000
+
+**Redução de perdas:**
+R$ 8.000.000 − R$ 1.440.000 = R$ 6.560.000
+
+**Considerando uma rejeição adicional de clientes adimplentes (estimativa de R$ 1.200.000 em lucro não capturado), o ganho líquido estimado permanece positivo:**
+
+Impacto financeiro líquido aproximado: + R$ 5.360.000
+
+**Conclusão**
+
+A política adotada (threshold = 0.12) privilegia a mitigação de perdas financeiras, refletindo uma estratégia conservadora de concessão de crédito.
+
+Mesmo com redução na taxa de aprovação, a simulação indica que a diminuição da inadimplência supera o lucro não capturado, resultando em impacto financeiro líquido positivo.
+
+*Os valores apresentados representam uma simulação ilustrativa para demonstrar impacto financeiro potencial.*
+
+
 ## 🚀 Aplicação Online
 
 👉 **Acesse o app:**  
