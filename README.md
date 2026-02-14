@@ -20,6 +20,17 @@ Dado esse cenário, **o erro mais crítico é o falso negativo**
 Por isso, o projeto foi desenvolvido com **prioridade na detecção correta de clientes inadimplentes**.
 
 ---
+
+## 📂 Fonte de Dados
+
+Os dados utilizados neste projeto são provenientes da competição 
+[Home Credit Default Risk](https://www.kaggle.com/competitions/home-credit-default-risk/data), 
+disponibilizada na plataforma Kaggle.
+
+O acesso aos dados requer conta no Kaggle e aceite dos termos da competição.
+
+---
+
 ## Estrutura do projeto 
 ### **Execução**
 
@@ -30,6 +41,8 @@ Por isso, o projeto foi desenvolvido com **prioridade na detecção correta de c
 - Treinamento do modelo, SHAP e decisão de negócio
 - MLflow e Streamlit
 - Conjunto de teste
+
+---
 
 ## 🎯 Métrica-Chave do Projeto
 
@@ -112,6 +125,8 @@ Portanto, a política de crédito implementada privilegia proteção contra perd
 
 Essa decisão está totalmente documentada no notebook técnico do projeto.
 
+---
+
 ## 💰 Simulação de Impacto Financeiro
 
 No cenário analisado, o custo de conceder crédito a um inadimplente é significativamente superior ao lucro obtido com um cliente adimplente.
@@ -151,6 +166,7 @@ Mesmo com redução na taxa de aprovação, a simulação indica que a diminuiç
 
 *Os valores apresentados representam uma simulação ilustrativa para demonstrar impacto financeiro potencial.*
 
+---
 
 ## 🚀 Aplicação Online
 
