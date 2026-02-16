@@ -4,4 +4,8 @@ numpy
 scikit-learn
 joblib
 MLflow
+shap
 matplotlib
+plotly
+lightgbm
+optuna
