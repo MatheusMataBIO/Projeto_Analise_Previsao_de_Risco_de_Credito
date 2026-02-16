@@ -171,7 +171,7 @@ Mesmo com redução na taxa de aprovação, a simulação indica que a diminuiç
 ## 🚀 Aplicação Online
 
 👉 **Acesse o app:**  
-*(link do Streamlit Cloud será adicionado após o deploy)*
+*[Clique aqui](https://3npkwgvviuduqs5gzrcprh.streamlit.app/)*
 
 ---
 
