@@ -3,7 +3,7 @@
 ## 📊 Modelo de Risco de Crédito — Home Credit
 
 Aplicação interativa para **análise e decisão de risco de crédito**, desenvolvida com foco em **minimização de perdas financeiras** e **transparência nas decisões**.  
-O projeto utiliza **Machine Learning (LightGBM)** aplicado ao dataset **Home Credit**, integrando métricas técnicas e indicadores de negócio em um único produto.
+O projeto utiliza **Machine Learning (LightGBM)** aplicado ao dataset **Home Credit**, integrando métricas técnicas e indicadores de negócio em um único produto. Todas as análises e decisões se encontram documentadas no próprio notebook.
 
 ---
 
